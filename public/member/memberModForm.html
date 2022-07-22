@@ -12,7 +12,7 @@
 			font-size: 9pt;
 		}
 		h5 {
-			width: 80%;
+			margin-left: 11%;
 		}
 		h1 {
 			margin: auto;
@@ -22,6 +22,9 @@
 		}
 		#offcanvasWithBackdrop {
 			background-color: #778899;
+		}
+		.form-control, .column {
+			text-align: center;
 		}
 	</style>
 
@@ -68,27 +71,29 @@
 					</li>
 				</ul>
 			</div>
-			<br>	
-			<br>
-			<h3 style="text-align: center;">회원 등록</h3>	
-			<br>
+		</div>
+		<br>	
+		<br>
+		<h3 style="text-align: center;">회원 등록</h3>	
+		<br>
+		<div class="container">
 			<div class="row" >
 				<div class="col-2">지원분야</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" class="form-control form-control-sm" value="풀스택 개발자">
 				</div>
 				<div class="col-2">경력구분</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" class="form-control form-control-sm" value="경력 7년차">
 				</div>
 				<div class="col-2">희망연봉</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" class="form-control form-control-sm" value="회사 내규에 따름">
 				</div>
 			</div>
 		</div>
 		
-		<h5 style="width:100%;">□ 기본정보</h5>
+		<h5>□ 기본정보</h5>
 		<div class="container">
 			<div class="row">
 				<div class="col-3">증명사진</div>
@@ -96,33 +101,32 @@
 					<div class="row">
 						<div class="col-2">성명</div>
 						<div class="col gx-1">
-							<input type="text" class="form-control form-control-sm">
+							<input type="text" class="form-control form-control-sm" value="서현진">
 						</div>
 						<div class="col-2">한문</div>
 						<div class="col gx-1">
-							<input type="text" class="form-control form-control-sm">
+							<input type="text" class="form-control form-control-sm" value="徐玄振">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-2">영문</div>
 						<div class="col gx-1">
-							<input type="text" class="form-control form-control-sm">
+							<input type="text" class="form-control form-control-sm" value="Seo hyunjin">
 						</div>
 						<div class="col-2">생년월일</div>
 						<div class="col gx-1">
-							<input type="date" class="form-control form-control-sm">
+							<input type="date" class="form-control form-control-sm" value="1985. 02. 27">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-2">전화번호</div>
 						<div class="col gx-0">
 							<select>
-								<option value="">선택</option>
 								<option value="010">010</option>
 								<option value="011">011</option>
 							</select>
-							<input type="text" class="column-sm-2" style="width: 40%">
-							<input type="text" class="column-sm-2" style="width: 40%">
+							<input type="text" class="column-sm-2" style="width: 40%" value="7753">
+							<input type="text" class="column-sm-2" style="width: 40%" value="1246">
 						</div>
 						<!--<div class="col"></div>
 						<div class="col"></div> -->
@@ -130,17 +134,17 @@
 					<div class="row">
 						<div class="col-2">전자우편</div>
 						<div class="col gx-1">
-							<input type="text" class="form-control form-control-sm">
+							<input type="text" class="form-control form-control-sm" value="SHJ1004@naver.com">
 						</div>
 						<div class="col-2">나이</div>
 						<div class="col gx-1">
-							<input type="text" class="form-control form-control-sm">
+							<input type="text" class="form-control form-control-sm" value="37">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-2">주소</div>
 						<div class="col gx-1">
-							<input type="text" class="form-control form-control-sm">
+							<input type="text" class="form-control form-control-sm" value="서울특별시 노원구 상계동">
 						</div>
 						<!--<div class="col"></div>
 						<div class="col"></div> -->
@@ -148,7 +152,7 @@
 					<div class="row">
 						<div class="col-2">취미생활</div>
 						<div class="col gx-1">
-							<input type="text" class="form-control form-control-sm">
+							<input type="text" class="form-control form-control-sm" value="뜨개질, 여행">
 						</div>
 						<!--<div class="col"></div>
 						<div class="col"></div> -->
@@ -165,38 +169,40 @@
 				<div class="col-2">학과</div>
 				<div class="col-3">소재지</div>
 			</div>
-			<div class="row">
+			<div class="row" style="text-align: center;">
 				<div class="col-3 gx-1">
-					<input type="date" class="form-control form-control-sm">
+					<input type="date" name="dateFront1" id="dateFront1" class="input-date" value="1997-03-01"> ~
+					<input type="date" name="dateBack1" id="dateBack1" class="input-date" value="2001-02-01">
 				</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" name="schName1" id="schName1" value="동덕여자대학교">
 				</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" name="graduate1" id="graduate1" value="졸업">
 				</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" name="dept1" id="dept1" value="실용음악학">
 				</div>
 				<div class="col-3 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" name="local1" id="local1" value="서울특별시 종로구">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-3 gx-1">
-					<input type="date" class="form-control form-control-sm">
+					<input type="date" name="dateFront2" id="dateFront2" class="input-date" value="1994-03-01"> ~
+					<input type="date" name="dateBack2" id="dateBack2" class="input-date" value="1997-02-01">
 				</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" name="schName2" id="schName2" value="구정고등학교">
 				</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" name="graduate2" id="graduate2" value="졸업">
 				</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" name="dept2" id="dept2">
 				</div>
 				<div class="col-3 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" name="local2" id="local2" value="서울특별시 강남구">
 				</div>
 			</div>
 		</div>
