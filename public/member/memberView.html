@@ -21,12 +21,13 @@
 			background-color: #778899;
 		}
 		#theme {
-			background-color: grey;
-			color: white;
+			background-color: #F0F8FF;
+			color: black;
 		}
 		h5 {
-			width: 1000px;;
+			text-align: start;
 		}
+		
 	</style>
 
 </head>
@@ -42,9 +43,9 @@
 		</div>
 		<div class="offcanvas-body text-white">
 			<img style="width: 100px; height: 100px; float: left;"alt="프로필 이미지" src="https://i.pinimg.com/564x/05/5a/91/055a91979264664a1ee12b9453610d82.jpg">
-			<h6><i class="fa-solid fa-gear"></i>설정</h6>
-			<h6><i class="fa-solid fa-arrow-right-from-bracket"></i>로그아웃</h6>
-			<ul style="font-size: 15px; clear: both; padding-top: 50px;">
+			<h5><i class="fa-solid fa-gear"></i>설정</h5>
+			<h5><i class="fa-solid fa-arrow-right-from-bracket"></i>로그아웃</h5>
+			<ul style="font-size: 20px; clear: both; padding-top: 50px;">
 				<li><i class="fa-solid fa-house-chimney"></i></li>
 				<li>코드그룹관리</li>
 				<li>코드관리</li>
@@ -74,7 +75,7 @@
 			</div>
 			<br>	
 			<br>
-			<h3 style="text-align: center;">회원 등록</h3>	
+			<h3 style="text-align: center;">회원정보</h3>	
 			<br>
 			<div class="row" >
 				<div class="col-2" id="theme">지원분야</div>
@@ -84,10 +85,8 @@
 				<div class="col-2" id="theme">희망연봉</div>
 				<div class="col-2 gx-1">회사 내규에 따름</div>
 			</div>
-		</div>
-		<br>
-		<h5  class="" id="theme2">□ 기본정보</h5>
-		<div class="container">
+			<br>
+			<h5 id="theme2">□ 기본정보</h5>
 			<div class="row">
 				<div class="col-3">증명사진</div>
 				<div class="col-9">
@@ -129,10 +128,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<br>
-		<h5 id="theme2">□ 학력사항</h5>
-		<div class="container">
+			<br>
+			<h5 id="theme2">□ 학력사항</h5>
 			<div class="row" id="theme">
 				<div class="col-3">기간</div>
 				<div class="col-2">출신학교</div>
@@ -154,10 +151,8 @@
 				<div class="col-2 gx-1">-</div>
 				<div class="col-3 gx-1">서울특별시 강남구</div>
 			</div>
-		</div>
-		<br>
-		<h5 id="theme2">□ 자격사항</h5>
-		<div class="container">
+			<br>
+			<h5 id="theme2">□ 자격사항</h5>
 			<div class="row" id="theme">
 				<div class="col">취득일</div>
 				<div class="col">종류 및 등급</div>
@@ -178,6 +173,7 @@
 			</div>
 		</div>
 	</form>
+	<br>
 	<br>
 	<center>
 		<button type="button" class="btn btn-primary" onclick="modi()">수정</button>
