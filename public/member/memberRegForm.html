@@ -7,7 +7,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<style type="text/css">
 		div {
-			border: 1px solid black; 
+			border: 1px solid #F0F8FF; 
 			text-align: center;
 			font-size: 9pt;
 		}
@@ -164,36 +164,26 @@
 			</div>
 			<div class="row">
 				<div class="col-3 gx-1">
-					<input type="date" class="form-control form-control-sm">
+					<input type="date" class="form-control form-control-sm" id="school_date">
 				</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" class="form-control form-control-sm" id="school_from">
 				</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" class="form-control form-control-sm" id="school_graduate">
 				</div>
 				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" class="form-control form-control-sm" id="school_dep">
 				</div>
 				<div class="col-3 gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" class="form-control form-control-sm" id="school_local">
 				</div>
 			</div>
+			<div class="row" id="point_school">
+			</div>
 			<div class="row">
-				<div class="col-3 gx-1">
-					<input type="date" class="form-control form-control-sm">
-				</div>
-				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
-				</div>
-				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
-				</div>
-				<div class="col-2 gx-1">
-					<input type="text" class="form-control form-control-sm">
-				</div>
-				<div class="col-3 gx-1">
-					<input type="text" class="form-control form-control-sm">
+				<div class="col offset-10">
+					<a class="btn btn-primary" style="float: right;"href="#" role="button" onclick="addSchool()"><i class="fa-solid fa-plus"></i></a>
 				</div>
 			</div>
 			<br>
@@ -206,30 +196,23 @@
 			</div>
 			<div class="row">
 				<div class="col gx-1">
-					<input type="date" class="form-control form-control-sm">
+					<input type="date" class="form-control form-control-sm" id="certi_date">
 				</div>
 				<div class="col gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" class="form-control form-control-sm" id="certi_grade">
 				</div>
 				<div class="col gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" class="form-control form-control-sm" id="certi_from">
 				</div>
 				<div class="col gx-1">
-					<input type="text" class="form-control form-control-sm">
+					<input type="text" class="form-control form-control-sm" id="certi_skill">
 				</div>
 			</div>
+			<div class="row" id="point_certi">
+			</div>
 			<div class="row">
-				<div class="col gx-1">
-					<input type="date" class="form-control form-control-sm">
-				</div>
-				<div class="col gx-1">
-					<input type="text" class="form-control form-control-sm">
-				</div>
-				<div class="col gx-1">
-					<input type="text" class="form-control form-control-sm">
-				</div>
-				<div class="col gx-1">
-					<input type="text" class="form-control form-control-sm">
+				<div class="col offset-10">
+					<a class="btn btn-primary" style="float: right;"href="#" role="button" onclick="addcerti()"><i class="fa-solid fa-plus"></i></a>
 				</div>
 			</div>
 		</div>
@@ -243,7 +226,12 @@
 	<br>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>	
 		<script src="https://kit.fontawesome.com/f92c8dde3d.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
 		<script type="text/javascript">
+		
+			var count_school = 0;
+			var count_certi = 0;
+		
 			function regist() {
 				alert("등록이 완료되었습니다.");
 				/* document.getElementById("form").submit(); */
@@ -252,7 +240,93 @@
 			function cancle() {
 				/* document.getElementById("form").submit(); */
 				location.href="memberList.html";
-			}	
+			}
+			function addSchool() {
+				
+				var temp = "";
+				
+				var school_date = document.getElementById("school_date").value;
+				var school_from = document.getElementById("school_from").value;
+				var school_graduate = document.getElementById("school_graduate").value;
+				var school_dep = document.getElementById("school_dep").value;
+				var school_local = document.getElementById("school_local").value;
+				
+				document.getElementById("school_date").value = "";
+				document.getElementById("school_from").value = "";
+				document.getElementById("school_graduate").value = "";
+				document.getElementById("school_dep").value = "";
+				document.getElementById("school_local").value = "";
+				
+				/* temp += " 기간: " + school_date;
+				temp += " 출신학교: " + school_from;
+				temp += " 졸업여부: " + school_graduate;
+				temp += " 학과: " + school_dep;
+				temp += " 소재지: " + school_local; */
+				
+				
+				
+				temp += '<div class="row" id="school'+ count_school +'">';
+				temp += '<div class="col-3 gx-1">';
+				temp += school_date;
+				temp += '</div>';
+				temp += '<div class="col-2 gx-1">';
+				temp += school_from;
+				temp += '</div>';
+				temp += '<div class="col-2 gx-1">';
+				temp += school_graduate;
+				temp += '</div>';
+				temp += '<div class="col-2 gx-1">';
+				temp += school_dep;
+				temp += '</div>';
+				temp += '<div class="col-2 gx-1">';
+				temp += school_local;
+				temp += '</div>';			
+				temp += '<div class="col-1">';
+				temp += '<button type="button" class="btn btn-sm btn-outline-danger" onclick="remove(school'+ count_school +')"><i class="fa-solid fa-minus"></i></button>';
+				temp += '</div>';
+				temp += '</div>';
+				
+				count_school += 1;
+				$("#point_school").append(temp);
+				
+			}
+			function remove(id) {
+				$(id).remove();
+			}
+			function addcerti() {
+				var temp = "";
+				
+				var certi_date = document.getElementById("certi_date").value;
+				var certi_from = document.getElementById("certi_from").value;
+				var certi_grade = document.getElementById("certi_grade").value;
+				var certi_skill = document.getElementById("certi_skill").value;
+				
+				document.getElementById("certi_date").value = "";
+				document.getElementById("certi_from").value = "";
+				document.getElementById("certi_grade").value = "";
+				document.getElementById("certi_skill").value = "";
+				
+				temp += '<div class="row" id="certi' + count_certi + '">';				
+				temp += '<div class="col-3">';
+				temp += certi_date;
+				temp += '</div>';
+				temp += '<div class="col-3">';
+				temp += certi_grade;
+				temp += '</div>';
+				temp += '<div class="col-3">';
+				temp += certi_from;
+				temp += '</div>';
+				temp += '<div class="col-2">';
+				temp += certi_skill;
+				temp += '</div>';
+				temp += '<div class="col-1">';
+				temp += '<button type="button" class="btn btn-sm btn-outline-danger" onclick="remove(certi'+ count_certi +')"><i class="fa-solid fa-minus"></i></button>';
+				temp += '</div>';
+				temp += '</div>';
+				
+				count_certi += 1;
+				$("#point_certi").append(temp);
+			}
 		</script>
 	</body>
 </html>
