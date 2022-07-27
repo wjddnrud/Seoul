@@ -1,9 +1,11 @@
 div {
-	width: 300px;
-	/* margin: auto;
-	padding: auto; */
-	border: 1px solid black;
+	/* width: 500px; */
+	/* margin: auto; */
+	/* padding: auto; */
+	/* border: 1px solid black; */
+	/* font-size: auto; */
+
 }
-.btn {
-	width: 100px;
+.row {
+	margin-bottom: 15px;
 }
