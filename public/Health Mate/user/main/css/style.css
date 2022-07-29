@@ -1,8 +1,12 @@
 div {
-	border: 1px solid yellow;
-	float: right;
+	/* border: 1px solid yellow; */
+	width: auto;
+	
 }
 
 #mainText {
 	color: white;
+}
+.row {
+	padding: 20px;
 }
