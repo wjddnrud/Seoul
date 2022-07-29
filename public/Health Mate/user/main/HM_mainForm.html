@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
  	<title>main</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
 		#offcanvasWithBackdrop {
 			background-color: black;
@@ -12,7 +13,7 @@
 	</style>
 </head>
   
-	<body style="background-image: url(../image/background.jpg); background-size: cover; background-color: #141517;">
+	<body class="container-md" style="background-image: url(../image/좌우\ 반전\ background.jpg); background-repeat: no-repeat; background-color: #141517;">
 		<img alt="company logo" href="" src="../image/LOGO.png" style="padding: 30px;">
 
 		<button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="float: right; margin: 30px;"><i class="fa-solid fa-bars"></i></button>
@@ -25,7 +26,35 @@
 				바디 부분 내용 첨부
 			</div>
 		</div>
-		
+		<div class="container justify-content-end">
+			<div class="row">
+				<div class="col" style="color: white; font-weight: bold; font-size: 60;">
+					Health
+				</div>
+				<div class="col" style="color: #ff0000; font-weight: bold; font-size: 60;">
+					Mate
+				</div>
+			</div>
+			<div class="row" id="mainText"  style="font-weight: bold; font-size: 45;"></div>>
+				방문을 진심으로 환영합니다!
+			</div>		
+			<div class="row" id="mainText" style="font-size: 25;" >
+				함께 운동할 친구를 찾는 사람<br>
+				이미 운동을 하고 있는 친구를 찾는 사람
+
+				그룹을 만들어 함께 운동할 친구를 모으거나
+				다른 사람이 만든 그룹에 참여해 함께 운동할 수 있습니다.
+			</div>
+			<div class="row" id="mainText" style="font-weight: bold; font-size: 35;">
+				함께 운동할 친구를 찾아보세요.
+			</div>
+			<div>
+				<button type="button" class="btn btn-danger" style="background-color: #ff0000;" id="mainText" >SEARCH</button>
+			</div>
+
+		</div>
+		<div style="position: absolute; top: -10000px; width: 0px; height: 0px;"></div>
+
 		
 		
 		
