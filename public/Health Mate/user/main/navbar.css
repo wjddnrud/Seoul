@@ -5,3 +5,10 @@ body {
 .navbar {
   margin-bottom: 20px;
 }
+div {
+	color: white;
+}
+.card {
+	color: white; 
+	text-align: center;	
+}
