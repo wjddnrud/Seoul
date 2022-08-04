@@ -2078,15 +2078,15 @@ input, select, textarea {
 			}
 		/* 메인화면 상단 아이콘 3종 컬러 부분 */
 		.icon.style1 {
-			color: #00ffcc;
+			color: #00f7ff;
 		}
 
 		.icon.style2 {
-			color: #00f0ff;
+			color: #ff0000;
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+			color: #fdff76;
 		}
 
 /* Image */
@@ -2487,7 +2487,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: #6b33ed;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2497,7 +2497,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: #8250f7 !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2505,8 +2505,8 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #eb341c !important;
-			}
+				background-color: #6b33ed !important;
+			} 
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
 		input[type="reset"].disabled,
@@ -2604,7 +2604,7 @@ input, select, textarea {
 			/* 하단 아이콘 */
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #ffe600;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -2819,7 +2819,7 @@ input, select, textarea {
 		}
 		/* 메인 상단 다이아 아이콘 부분 배경 */
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #73439b;
 			color: #c8ece9;
 		}
 
@@ -2982,7 +2982,7 @@ input, select, textarea {
 		}
 		/* landing page 하단 배경색 */
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #150b41;
 			color: #d3d4e4;
 		}
 
@@ -3353,7 +3353,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #000000;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3447,7 +3447,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: rgb(0, 0, 0);
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -3998,5 +3998,39 @@ input, select, textarea {
 	}
 	/* 모바일 사이즈로 작아졌을때 footer 컬러 */
 	body.is-mobile.landing #footer {
-		background-color: #282a1d;
+		background-color: rgba(29, 36, 42, 0.9);
+	}
+
+/* Sign-in */
+
+	body.sign #page-wrapper {
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/나이키1.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/나이키1.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/나이키1.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/나이키1.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 0;
+	}
+	
+	body.is-mobile.sign #banner,
+	body.is-mobile.sign .wrapper.style4 {
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/나이키1.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/나이키1.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/나이키1.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/나이키1.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	/* 모바일 사이즈로 작아졌을때 footer 컬러 */
+	body.is-mobile.landing #footer {
+		background-color: rgba(29, 36, 42, 0.9);
+	}
+
+	body.sign .form-control {
+		width: 40%;
+		margin-left: auto;
 	}
