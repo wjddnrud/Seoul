@@ -2076,7 +2076,7 @@ input, select, textarea {
 				}
 
 			}
-
+		/* 메인화면 상단 아이콘 3종 컬러 부분 */
 		.icon.style1 {
 			color: #00ffcc;
 		}
@@ -2601,7 +2601,7 @@ input, select, textarea {
 			.features li:nth-child(10) {
 				background-color: rgba(0, 0, 0, 0.35);
 			}
-
+			/* 하단 아이콘 */
 			.features li:before {
 				display: block;
 				color: #00ffcc;
@@ -2659,12 +2659,14 @@ input, select, textarea {
 			}
 
 /* Spotlight */
+/* child가 생길때마다 그에 맞게 컬러 설정 가능 좌우 컨버트 되서 생성되게 되어있음 */
 
 	.spotlight {
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
+		text-align: center;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2815,7 +2817,7 @@ input, select, textarea {
 		.wrapper.alt {
 			padding: 0;
 		}
-
+		/* 메인 상단 다이아 아이콘 부분 배경 */
 		.wrapper.style1 {
 			background-color: #21b2a6;
 			color: #c8ece9;
@@ -2978,7 +2980,7 @@ input, select, textarea {
 		.wrapper.style2 {
 			background-color: #2e3842;
 		}
-
+		/* landing page 하단 배경색 */
 		.wrapper.style3 {
 			background-color: #505393;
 			color: #d3d4e4;
@@ -3267,7 +3269,7 @@ input, select, textarea {
 			.wrapper.style5 table.alt tbody tr td {
 				border-color: #dfdfdf;
 			}
-
+			/* element 페이지 input 부분 */
 			.wrapper.style5 input[type="submit"],
 			.wrapper.style5 input[type="reset"],
 			.wrapper.style5 input[type="button"],
@@ -3340,7 +3342,7 @@ input, select, textarea {
 			width: 100%;
 			z-index: 10001;
 		}
-
+	/* 메뉴부분 */
 	#menu {
 		-moz-transform: translateX(20em);
 		-webkit-transform: translateX(20em);
@@ -3682,7 +3684,7 @@ input, select, textarea {
 				position: absolute;
 				width: 1.5em;
 			}
-
+		/* 메인 상단 이미지로 바뀌기 전 컬러 */
 		#banner:after {
 			pointer-events: none;
 			-moz-transition: opacity 3s ease-in-out;
@@ -3882,7 +3884,8 @@ input, select, textarea {
 		background-attachment: scroll;
 	}
 
-/* Footer */
+/* Footer */ 
+/* 메인 제외한 나머지 footer 컬러가 바뀜 */
 
 	#footer {
 		padding: 6em 0 4em 0 ;
@@ -3901,7 +3904,7 @@ input, select, textarea {
 				#footer .icons a:hover {
 					color: #fff;
 				}
-
+		/* footer copyright 글씨 부분 */
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 0.8em;
@@ -3910,7 +3913,7 @@ input, select, textarea {
 			padding: 0;
 			text-transform: uppercase;
 		}
-
+			/* footer copyright 글자 사이 파이프 부분 */
 			#footer .copyright li {
 				border-left: solid 1px rgba(255, 255, 255, 0.5);
 				display: inline-block;
@@ -3974,7 +3977,7 @@ input, select, textarea {
 		background-size: cover;
 		padding-top: 0;
 	}
-
+	/* landing 페이지 footer 부분 */
 	body.landing #footer {
 		background-color: rgba(29, 36, 42, 0.9);
 	}
@@ -3993,7 +3996,7 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-
+	/* 모바일 사이즈로 작아졌을때 footer 컬러 */
 	body.is-mobile.landing #footer {
-		background-color: #1d242a;
+		background-color: #282a1d;
 	}
