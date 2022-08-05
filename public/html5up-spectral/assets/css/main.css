@@ -4001,7 +4001,14 @@ input, select, textarea {
 		background-color: rgba(29, 36, 42, 0.9);
 	}
 
-/* Sign-in */
+
+
+
+
+
+
+
+	/* Sign-in */
 
 	body.sign #page-wrapper {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/나이키1.jpg");
@@ -4034,12 +4041,22 @@ input, select, textarea {
 		width: 40%;
 		margin-left: auto;
 	}
+/* 	
+	#demo-email, #demo-password {
+		width: 40%;
+		justify-content: center;
+	} */
+
+
+
+
+
 
 	/* Sing-In input 부분 */
 	.inputBox {
 		position : relative;
 		width: 250px;
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 	}
 	.inputBox input {
 		width: 100%;
@@ -4056,7 +4073,7 @@ input, select, textarea {
 		position: absolute;
 		top: 0;
 		left: 0;
-		padding: 20px;
+		padding: 10px;
 		pointer-events: none;
 		font-size: 1em;
 		color: rgba(255,255,255,0.25);
@@ -4065,16 +4082,16 @@ input, select, textarea {
 	.inputBox input:valid ~ span,
 	.inputBox input:focus ~ span {
 		color: #00dfc4;
-		transform: translateX(10px) translateY(-7px);
-		font-size: 0.65em;
+		transform: translateX(10px) translateY(-30px);
+		font-size: 0.8em;
 		padding: 0 10px;
 		/* background: #6b33ed; */
 		background: transparent;
-		border-left: 2px solid#6b33ed;
-		border-right: 2px solid#6b33ed;
-		border-radius: 5px;
-		letter-spacing: 0.2em;
-		transition: 0.5s;
+		border-left: 2px solid#fff;
+		border-right: 2px solid#fff;
+		border-radius: 0px;
+		letter-spacing: 0.3em;
+		transition: 0.3s;
 	}
 	/* 두껍게 하는법 */
 	/* .inputBox:nth-child(2) input:valid ~ span,
