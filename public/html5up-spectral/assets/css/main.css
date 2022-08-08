@@ -2078,15 +2078,15 @@ input, select, textarea {
 			}
 		/* 메인화면 상단 아이콘 3종 컬러 부분 */
 		.icon.style1 {
-			color: #00f7ff;
+			color: #fc5757;
 		}
 
 		.icon.style2 {
-			color: #ff0000;
+			color: #84ffd0;
 		}
 
 		.icon.style3 {
-			color: #fdff76;
+			color: #bd60fc;
 		}
 
 /* Image */
@@ -2819,7 +2819,7 @@ input, select, textarea {
 		}
 		/* 메인 상단 다이아 아이콘 부분 배경 */
 		.wrapper.style1 {
-			background-color: #73439b;
+			background-color: #000000;
 			color: #c8ece9;
 		}
 
@@ -4284,3 +4284,7 @@ input, select, textarea {
 		border: 1px solid #00dfc4;
 	} */
 	
+
+
+	/* card (그룹 페이지)*/
+

@@ -5,114 +5,197 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Sport Mate</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="sign is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+<head>
+	<title>Elements - Spectral by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-				<!-- Header 상단 고정 네비바 -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Sport Mate</a></h1>
-						<nav id="nav">
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="#">sport mate</a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle"><span>Menu</span></a>
+						<div id="menu">
 							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Find Mate</a></li>
-											<li><a href="elements.html">Community</a></li>
-											<li><a href="signUp.html">Sign Up</a></li>
-											<li><a href="signIn.html">Log In</a></li>
-										</ul>
-									</div>
-								</li>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">FIND MATE</a></li>
+								<li><a href="elements.html">COMMUNITY</a></li>
+								<li><a href="signUp.html">SIGN UP</a></li>
+								<li><a href="signIn.html">SIGN IN</a></li>
 							</ul>
-						</nav>
-					</header>
-
-				<!-- Banner 메인화면 처음 모션부분 -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Sport Mate</h2>
-
-							
-
-							<!-- <section class="wrapper style6"> -->
-								<h4>회원가입</h4>
-								<form method="post" action="#">
-									<div class="row gtr-uniform">
-										<div class="col-6 col-12-xsmall">
-											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-										</div>
-										<div class="col-6 col-12-xsmall">
-											<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-										</div>
-										<div class="col-12">
-											<select name="demo-category" id="demo-category">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
-											</select>
-										</div>
-										<div class="col-4 col-12-small">
-											<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-											<label for="demo-priority-low">Low</label>
-										</div>
-										<div class="col-4 col-12-small">
-											<input type="radio" id="demo-priority-normal" name="demo-priority">
-											<label for="demo-priority-normal">Normal</label>
-										</div>
-										<div class="col-4 col-12-small">
-											<input type="radio" id="demo-priority-high" name="demo-priority">
-											<label for="demo-priority-high">High</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-copy" name="demo-copy">
-											<label for="demo-copy">Email me a copy</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-human" name="demo-human" checked>
-											<label for="demo-human">Not a robot</label>
-										</div>
-										<div class="col-12">
-											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
-												<li><input type="reset" value="Reset" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
-
-
 						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<article id="main">
+			<header>
+				<h2>Sport Mate 회원가입</h2>
+				<p>멤버가 되어 sport mate가 제공하는 다양한 정보와 친구들을 만나보세요.</p>
+			</header>
+			<section class="wrapper style5">
+				<div class="inner">
+					<section>
+						<!-- <h2>회원가입</h2> -->
+						<form method="post" action="#">
+							<div class="row gtr-uniform">
+								<div class="col-12 col-12-xsmall">
+									<label for="demo-id">ID</label>
+									<input type="text" name="demo-id" id="demo-id" value="" placeholder="영문,숫자 5~10자" />
+								</div>
+								<div class="col-12 col-12-xsmall">
+									<label for="demo-password">PASSWORD</label>
+									<input type="password" name="demo-password" id="demo-password" value=""
+										placeholder="숫자,영문,특수문자 조합 최소 8자" />
+									<input type="password" name="demo-passwordRe" id="demo-passwordRe" value=""
+										placeholder="비밀번호 재입력" style="margin-top: 10px;" />
+								</div>
+								<div class="col-12 col-12-xsmall">
+									<label for="demo-name">이름</label>
+									<input type="text" name="demo-name" id="demo-name" value="" placeholder="" />
+								</div>
+								<div class="col-12">
+									<label for="demo-name">성별</label>
+									<select name="demo-gender" id="demo-gender">
+										<option value="">- 선택 -</option>
+										<option value="1">남성</option>
+										<option value="2">여성</option>
+										<option value="3">기타</option>
+									</select>
+								</div>
+								<div class="col-12 col-12-xsmall">
+									<label for="demo-job">직업</label>
+									<input type="text" name="demo-job" id="demo-job" value="" placeholder="" />
+								</div>
+								<div class="col-12 col-12-xsmall">
+									<label for="demo-birth">생년월일</label>
+									<input type="text" name="demo-birth" id="demo-birth" value=""
+										placeholder="예)19951027(년도월일)" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<label for="demo-phone">휴대전화</label>
+									<input type="text" name="demo-phone" id="demo-phone" value=""
+										placeholder="'-'없이 번호만 입력해주세요." />
+									<input type="button" class="primary" value="인증번호 전송" style="margin-top: 10px;" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<label for="demo-name">휴대전화 인증</label>
+									<input type="text" name="demo-name" id="demo-name" value=""
+										placeholder="인증번호를 입력해주세요." />
+									<input type="button" class="primary" value="확인" style="margin-top: 10px;" />
+								</div>
+								<div class="col-12 col-12-xsmall">
+									<label for="demo-email">Email</label>
+									<input type="text" name="demo-email" id="demo-email" value=""
+										placeholder="Email@example.com" />
+									<span>계정 분실 시 본인인증 정보로 활용됩니다.</span>
+								</div>
+								<div class="col-8 col-12-xsmall">
+									<label for="demo-address">주소</label>
+									<input type="text" name="demo-address" id="demo-address" value="" placeholder="" />
+									<input type="text" name="demo-address" id="demo-address" value="" placeholder=""
+										style="margin-top: 10px;" />
+								</div>
+								<div class="col-4 col-12-xsmall">
+									<label for="demo-address">Zip Code</label>
+									<input type="text" name="demo-address" id="demo-address" value="" placeholder="" />
+									<input type="button" class="primary" value="주소 검색" style="margin-top: 10px;" />
+								</div>
+								<div class="col-12">
+									<label for="demo-name">가입경로</label>
+									<select name="demo-route" id="demo-route">
+										<option value="">- 선택 -</option>
+										<option value="1">지인추천</option>
+										<option value="1">인터넷 광고</option>
+										<option value="1">유튜브</option>
+										<option value="1">블로그</option>
+									</select>
+								</div>
+								<div class="col-12 col-12-small">
+									<input type="checkbox" id="demo-allAgree" name="demo-allAgree" onclick="selectAll(this)">
+									<label for="demo-allAgree">약관 전체 동의하기</label>
+								</div>
+								<div class="col-12 col-12-small">
+									<input type="checkbox" id="demo-agree1" name="demo-agree">
+									<label for="demo-agree1">[필수] 개인정보 수집 및 이용 동의&nbsp;<a href="#" target="_blank">자세히</a></label>
+								</div>
+								<div class="col-12 col-12-small">
+									<input type="checkbox" id="demo-agree2" name="demo-agree">
+									<label for="demo-agree2">[필수] SPORT MATE 이용 약관 동의&nbsp;<a href="#" target="_blank">자세히</a></label>
+								</div>
+								<div class="col-12 col-12-small">
+									<input type="checkbox" id="demo-agree3" name="demo-agree">
+									<label for="demo-agree3">[필수] 만 14세 미만 가입 제한</label>
+								</div>
+								<div class="col-12 col-12-small">
+									<input type="checkbox" id="demo-agree4" name="demo-agree">
+									<label for="demo-agree4">[선택] 마케팅 활용 및 광고성 정보 수신 동의&nbsp;<a href="#" target="_blank">자세히</a></label>
+								</div>
+								<div class="col-12">
+									<ul class="actions fit">
+										<li><input type="reset" value="Reset" /></li>
+										<li><input type="submit" value="Sign-up" class="primary" /></li>
+										<li><input type="button" value="cancle" onclick="location.href='signIn.html'" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
 					</section>
+				</div>
+			</section>
+		</article>
+	
+	
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Untitled</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		function selectAll(selectAll)  {
+			const checkboxes 
+				= document.getElementsByName("demo-agree");
 			
+			checkboxes.forEach((checkbox) => {
+			checkbox.checked = selectAll.checked;
+			})
+		}
+	</script>
+</body>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-		<!-- 폰트어썸 -->
-			<script src="https://kit.fontawesome.com/f92c8dde3d.js" crossorigin="anonymous"></script>
-	</body>
 </html>
