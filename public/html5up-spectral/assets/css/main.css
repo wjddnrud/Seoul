@@ -4279,6 +4279,7 @@ input, select, textarea {
 		letter-spacing: 0.3em;
 		transition: 0.3s;
 	}
+
 	/* 두껍게 하는법 */
 	/* .inputBox:nth-child(2) input:valid ~ span,
 	.inputBox:nth-child(2) input:focus ~ span {
@@ -4293,90 +4294,33 @@ input, select, textarea {
 	
 
 
-	/* card (그룹 페이지)*/
 
 
+	/* card */
 
-	/* Pagination */ 
-	/* 작동이 잘 안됨 */
-
-	/* .pagination {
-		list-style: none;
-	}
-	.pagination {
-		position: relative;
-		display: inline-block;
-		width: 40px;
-		height: 40px;
-		font-size: 20px;
-		text-align: center;
-		line-height: 40px;
-		background: #353535;
-		color: #565656;
-		text-decoration: none;
-		margin: 5px;
-		border-radius: 4px;
-		box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
-	}
-
-	.pagination : :hover {
-		color: #fff;
-		text-shadow : 0 0 20px rgb(255,224,27), 
-					 0 0 20px rgb(255,224,27),
-					 0 0 20px rgb(255,224,27),
-					 0 0 20px rgb(255,224,27),
-					 0 0 20px rgb(255,224,27),
-					 0 0 20px rgb(255,224,27),
-					 0 0 20px rgb(255,224,27),
-					 0 0 20px rgb(255,224,27);
-	} */
-	
-
-
-
-
-
-
-	card
-
-	/* section {
-		position: relative;
-	}
-	section::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(#f00,#f0f);
-		clip-path: circle(20% at 10% 10%);
-	} */
 	.container {
 		position: relative;
-		z-index: 2;
+		z-index: 1;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
 		margin: 40px 0;
 	}
-
 	.container .card {
 		position: relative;
-		width: 300px;
-		height: 400px;
+		width: 250px;
+		height: 350px;
 		background: rgba(255, 255, 255, 0.05);
-		margin: 50px;
-		box-shadow: 0 0px 20px rgba(255, 255, 255, 0.959);
+		margin: 20px;
+		box-shadow: 0 5px 20px rgba(255, 255, 255, 0.45);
 		border-radius: 15px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		backdrop-filter: blur(10px);
 	}
-	
-	.container .card .content2 {
+	.container .card .content {
 		position: relative;
 		display: flex;
 		justify-content: center;
@@ -4384,145 +4328,60 @@ input, select, textarea {
 		flex-direction: column;
 		opacity: 0.5;
 		transition: 0.5s;
-
 	}
-
-	.container .card:hover .content2 {
+	.container .card:hover .content {
 		opacity: 1;
 		transform: translateY(-35px);
 	}
-
-	.container .card .content2 .imgBx {
+	.container .card .content .imgBx {
 		position: relative;
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 		border-radius: 50%;
 		overflow: hidden;
-		border: 10px solid rgba(0, 0, 0, 0.25);
+		border: 10px solid rgba(0,0,0,0.25);
 	}
-
-	.container .card .content2 .imgBx img {
+	.container .card .content .imgBx img {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-	}   /* 프로필 사진 딱 맞게 만들기 */
-	
-	.container .card .content2 .content2Bx h3 {
+	}
+	.container .card .content .contentBx h3 {
 		color: #fff;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		font-weight: 500;
-		font-size: 20px;
+		font-size: 18px;
 		text-align: center;
-		margin: 0px 10px 10px;
-		line-height: 1.2em;
+		margin: 20px 0 10px;
+		line-height: 1.5em;
 	}
-
-	.container .card .content2 .content2Bx h3 span {
-		font-size: 12px;
+	.container .card .content .contentBx h3 span {
+		font-size: 15px;
 		font-weight: 300;
 		text-transform: initial;
 	}
-
 	.container .card .sci {
 		position: absolute;
-		bottom: 0px;
+		bottom: -5px;
 		display: flex;
 	}
-
 	.container .card .sci li {
 		list-style: none;
-		margin: 0 20px;
-		padding: 0;
-		transform: translateY(20px);
+		margin: 0 25px;
+		transform: translateY(10px);
 		transition: 0.5s;
 		opacity: 0;
 		transition-delay: calc(0.1s * var(--i));
 	}
-
 	.container .card:hover .sci li {
-		transform: translateY(10px);
+		transform: translateY(-10px);
 		opacity: 1;
 	}
-
 	.container .card .sci li a {
 		color: #fff;
-		font-size: 24px;
-	}
-
-
-
-	/* modal box */
-
-	.box {
-		position: relative;
-		width: 600px;
-		height: 600px;
-		background: #262626;
-		margin: 20px auto;
-		box-shadow: 0 10px 10px rgba(0,0,0,0.5);
-	}
-	a {
-		text-align: center;
-		font-size: 24px;
-		text-decoration: none;
-		width: 180px;
-		height: 50px;
-		line-height: 50px;
-		border-radius: 25px;
-		display: block;
-		cursor: pointer;
-	}
-	a.open {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		color: #fff;
-		border: 2px solid #fff;
-	}
-	a.close {
-		position: relative;
-		color: #262626;
-		border: 2px solid #262626;
-		left: 50%;
-		transform: translateX(-50%);
-		top: 20px;
-	}
-
-	.content {
-		position: absolute;
-		background: #fff;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		padding: 50px;
-		border: 5px solid #262626;
-		box-sizing: border-box;
-		text-align: center;
-		justify-content: center;
-		align-items: center;
-
-	}
-	.content h1 {
-		margin: 0;
-		padding: 0;
-		color: #262626
-
-	}
-	.content p {
-		position: relativ
-		color: #262626
-	}
-	.content {
-		transform: perspective(1000px) rotateY(90deg) scale(0);
-		transition: 0.5s;
-	}
-
-	.active {
-		transform: perspective(1000px) rotateY(0deg) scale(0);
+		font-size: 20px;
 	}
