@@ -2346,22 +2346,26 @@ input, select, textarea {
 			border: solid 1px #fff;
 			border-left: 0;
 			border-right: 0;
+			font-size: 14px;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(144, 144, 144, 0.25);
+				background-color: rgba(0, 0, 0, 0.0375);
 			}
 
 		table td {
-			padding: 0.75em 0.75em;
+			/* padding: 0.75em 0.75em; */
+			padding: 10px; 
 		}
 
 		table th {
 			color: #fff;
 			font-size: 0.9em;
 			font-weight: 600;
-			padding: 0 0.75em 0.6em 0.75em;
-			text-align: left;
+			/* padding: 0 0.75em 0.6em 0.75em; */
+			padding: 6px;
+			text-align: center;
+			border: 2px solid rgba(143, 142, 142, 0.11);
 		}
 
 		table thead {
@@ -2396,6 +2400,10 @@ input, select, textarea {
 
 			table.alt tfoot {
 				border-top: 0;
+			}
+			table.alt tbody tr:hover {
+				background-color: #f8d6a436;
+				cursor: pointer;
 			}
 
 /* Button */
@@ -3251,9 +3259,9 @@ input, select, textarea {
 				border-color: #dfdfdf;
 			}
 
-				.wrapper.style5 table tbody tr:nth-child(2n + 1) {
+				/* .wrapper.style5 table tbody tr:nth-child(2n + 1) {
 					background-color: rgba(0, 0, 0, 0.0375);
-				}
+				} */
 
 			.wrapper.style5 table th {
 				color: #2E3842;
@@ -4312,7 +4320,7 @@ input, select, textarea {
 		width: 250px;
 		height: 350px;
 		background: rgba(255, 255, 255, 0.05);
-		margin: 20px;
+		margin: 25px;
 		box-shadow: 0 5px 20px rgba(255, 255, 255, 0.45);
 		border-radius: 15px;
 		display: flex;
@@ -4353,11 +4361,11 @@ input, select, textarea {
 		color: #fff;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 18px;
 		text-align: center;
 		margin: 20px 0 10px;
-		line-height: 1.5em;
+		line-height: 1.7em;
 	}
 	.container .card .content .contentBx h3 span {
 		font-size: 15px;
