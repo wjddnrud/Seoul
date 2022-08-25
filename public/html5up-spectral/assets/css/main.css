@@ -2349,9 +2349,9 @@ input, select, textarea {
 			font-size: 14px;
 		}
 
-			table tbody tr:nth-child(2n + 1) {
+			/* table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(0, 0, 0, 0.0375);
-			}
+			} */
 
 		table td {
 			/* padding: 0.75em 0.75em; */
@@ -2365,7 +2365,8 @@ input, select, textarea {
 			/* padding: 0 0.75em 0.6em 0.75em; */
 			padding: 6px;
 			text-align: center;
-			border: 2px solid rgba(143, 142, 142, 0.11);
+			border: 1px solid rgb(100, 100, 100);
+			background-color: #000000;
 		}
 
 		table thead {
@@ -3263,9 +3264,9 @@ input, select, textarea {
 					background-color: rgba(0, 0, 0, 0.0375);
 				} */
 
-			.wrapper.style5 table th {
+			/* .wrapper.style5 table th {
 				color: #2E3842;
-			}
+			} */
 
 			.wrapper.style5 table thead {
 				border-color: #dfdfdf;
@@ -4426,4 +4427,13 @@ input, select, textarea {
 		padding: 0;
 		overflow: hidden;
 		border: 0;
+	}
+
+	.fmtd {
+		text-align: start; 
+		padding-left: 30px;
+	}
+
+	.mapBox {
+		
 	}
