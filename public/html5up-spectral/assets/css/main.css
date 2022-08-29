@@ -2349,9 +2349,9 @@ input, select, textarea {
 			font-size: 14px;
 		}
 
-			/* table tbody tr:nth-child(2n + 1) {
+			table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(0, 0, 0, 0.0375);
-			} */
+			}
 
 		table td {
 			/* padding: 0.75em 0.75em; */
@@ -4123,7 +4123,7 @@ input, select, textarea {
 		.wrapper.style6 input[type="email"],
 		.wrapper.style6 select,
 		.wrapper.style6 textarea {
-			background-color: rgba(0, 0, 0, 0.0375);
+			background-color: rgba(0, 0, 0, 0.1);
 		}
 
 		.wrapper.style6 select {
@@ -4142,9 +4142,9 @@ input, select, textarea {
 
 			.wrapper.style6 input[type="checkbox"] + label:before,
 			.wrapper.style6 input[type="radio"] + label:before {
-				background: rgba(0, 0, 0, 0.0375);
+				background: rgba(0, 0, 0, 0.1);
 			}
-
+		/* Remember 부분 */
 		.wrapper.style6 input[type="checkbox"]:checked + label:before,
 		.wrapper.style6 input[type="radio"]:checked + label:before {
 			background: #2E3842;
@@ -4152,23 +4152,23 @@ input, select, textarea {
 		}
 
 		.wrapper.style6 ::-webkit-input-placeholder {
-			color: #8E8892 !important;
+			color: #726c759d !important;
 		}
 
 		.wrapper.style6 :-moz-placeholder {
-			color: #8E8892 !important;
+			color: #726c759d !important;
 		}
 
 		.wrapper.style6 ::-moz-placeholder {
-			color: #8E8892 !important;
+			color: #726c759d !important;
 		}
 
 		.wrapper.style6 :-ms-input-placeholder {
-			color: #8E8892 !important;
+			color: #726c759d !important;
 		}
 
 		.wrapper.style6 .formerize-placeholder {
-			color: #8E8892 !important;
+			color: #726c759d !important;
 		}
 
 		.wrapper.style6 .icon.major {
@@ -4235,6 +4235,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
@@ -4447,3 +4448,66 @@ input, select, textarea {
 		width: 100%;
 		height: 100%;
 	}
+
+
+
+	/* tab */
+/* 
+	.tab-container {
+		width: 600px;
+		height: 400px;
+		box-shadow: 3px 5px 10px rgba(0, 0, 0, .8);
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.options {
+		display: flex;
+		width: 100%;
+		height: 15%;
+		list-style: none;
+	}
+
+	.option {
+		flex-grow: 1;
+		text-align: center;
+		line-height: 60px;
+		border: solid 1px rgba(4, 51, 78, .6);
+		color: #fff;
+		cursor: pointer;
+	}
+
+	.option-active {
+		background: var(--bg-active);
+		border-bottom: 1px solid rgba(7, 63, 95, .4);
+	}
+
+	.contents {
+		width: 100%;
+		height: 85%;
+	}
+
+	.content {
+		width: 100%;
+		height: 100%;
+		color: #fff;
+		display: none;
+	}
+
+	.content-active {
+		background: var(--bg-active);
+		display: block;
+	}
+
+	.content h3 {
+		align-items: center;
+		padding-bottom: 10px;
+		border-bottom: solid 1px rgba(255, 255, 255, .3);
+		letter-spacing: 2px;
+		margin: 10px;
+	}
+
+	.content p {
+		margin: 15px;
+		letter-spacing: 1px;
+	} */
