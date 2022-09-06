@@ -85,9 +85,8 @@
 											<option value="">2</option>
 										</select>
 										<input class="form-control me-1" type="search" placeholder="검색어" aria-label="Search">
-										<button class="btn btn-outline-success me-1" type="submit"><i
-												class="fa-solid fa-magnifying-glass"></i></button>
-										<button class="btn btn-outline-warning" type="reset"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+										<button class="btn btn-success me-1" type="submit" style="color: white;"><i class="fa-solid fa-magnifying-glass"></i></button>
+										<button class="btn btn-warning" type="reset" style="color: white;"><i class="fa-solid fa-arrow-rotate-left"></i></button>
 									</form>
 								</div>
 								<div class="table-wrapper">
@@ -127,12 +126,55 @@
 											마이페이지 -> 내 글 삭제 -> 리스트 체크 후 삭제 -->
 										</tfoot>
 									</table>
-									
-									<center>
-										<a href="boardReg.html" class="button primary">작성</a>
-										<a href="index.html" class="button"><i class="fa-solid fa-house"></i>&nbsp;홈으로</a>
-										<!-- <a href="boardNotify.html" class="button" style="background-color: red; color: white;">🚨신고</a> -->
-									</center>
+
+									<nav aria-label="Page navigation example">
+										<ul class="pagination justify-content-center">
+											<li class="page-item">
+												<a class="page-link" href="#" aria-label="Previous">
+													<span aria-hidden="true">&laquo;</span>
+												</a>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item">
+												<a class="page-link" href="#" aria-label="Next">
+													<span aria-hidden="true">&raquo;</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+									<br>
+									<div>
+										<button type="button" class="btn btn-danger" da ta-bs-toggle="modal" data-bs-target="#staticBackdrop">
+											<i class="fa-solid fa-eraser"></i>
+										</button>
+										<!-- Modal -->
+										<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+											aria-labelledby="staticBackdropLabel" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="staticBackdropLabel">삭제 여부 재확인</h5>
+														<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+													</div>
+													<div class="modal-body">
+														정말로 삭제를 원하십니까?
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-danger" onclick="remove();">Delete</button>
+														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button type="button" class="btn btn-danger" onclick=""><i class="fa-solid fa-trash-can"></i></button>
+										<button type="button" class="btn btn-primary" style="float: right;" onclick="regist()"><i class="fa-solid fa-plus"></i></button>
+										<button class="btn btn-success me-1" style="float: right;" href="#"><i
+												class="fa-solid fa-file-excel"></i></button>
+									</div>
+									<br>
+									<br>
 								</div>
 							</section>
 
@@ -167,6 +209,14 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://kit.fontawesome.com/f92c8dde3d.js" crossorigin="anonymous"></script>
+			<script type="text/javascript">
+				function remove() {
+					location.href = "memberDelete.html";
+				}
+				function regist() {
+					location.href = "memberRegForm.html";
+				}
+			</script>
 
 
 

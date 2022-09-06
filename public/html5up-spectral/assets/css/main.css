@@ -2441,7 +2441,7 @@ input, select, textarea {
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
-		overflow: hidden;
+		/* overflow: hidden; */
 		text-overflow: ellipsis;
 	}
 
