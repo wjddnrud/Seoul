@@ -12,6 +12,8 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="/resources/demos/style.css">
 	</head>
 	<body class="is-preload">
 			<!-- Page Wrapper -->
@@ -68,17 +70,23 @@
 								<form  action="http://localhost:8080/codegroup/src">
 									<!-- <form class="d-flex" role="search"> -->
 										<select class="form-select form-control me-1 text-center" aria-label="Default selet example">
-											<option value="gender">삭제여부</option>
+											<option value="">사용여부</option>
 											<option value="">N</option>
 											<option value="">Y</option>
 										</select>
 										<select class="form-select form-control me-1 text-center" aria-label="Default selet example">
-											<option value="gender">수정일</option>
-											<option value="">1</option>
-											<option value="">2</option>
+											<option value="">삭제여부</option>
+											<option value="">N</option>
+											<option value="">Y</option>
 										</select>
-										<input class="form-control me-1" type="search" placeholder="시작일" aria-label="Search">
-										<input class="form-control me-1" type="search" placeholder="종료일" aria-label="Search">
+										<select class="form-select form-control me-1 text-center" aria-label="Default selet example">
+											<option value="">날짜 구분</option>
+											<option value="">등록일자</option>
+											<option value="">수정일자</option>
+										</select>
+										<input type="text" id="datepicker" placeholder="Date : 시작일">
+										<input type="text" id="datepicker" placeholder="Date : 종료일">
+  
 										
 										
 										<select id="shOption" name="shOption" class="form-select form-select-sm">
@@ -114,24 +122,24 @@
 											</tr>
 										</thead>
 										<tbody style="color: black;">
-											<c:choose>
+											<!-- <c:choose>
 												<c:when test="${fn:length(list) eq 0}">
 													<tr>
 														<td class="text-center" colspan="8">There is no data!</td>
 													</tr>
 												</c:when>
 											</c:choose>
-											<c:forEach items="${list}" var="list" varStatus="status">
+											<c:forEach items="${list}" var="list" varStatus="status"> -->
 											<tr style="color: black;">
 												<td><input type="checkbox" id="demo-human" name="demo-human">
 													<label></label></td>
 												<td><c:out value="${list.seq }"/></td>
-												<td>1</td>
+												<td></td>
 												<td><c:out value="${list.ccg_name }"/></td>
 												<td><c:out value="${list.xCodeCount }"/></td>
 												<td><c:out value="${list.useNY }"/></td>
-												<td>2022-09-01 00:00:00</td>
-												<td>2022-09-01 00:00:00</td>
+												<td></td>
+												<td></td>
 											</tr>
 											</c:forEach>
 										</tbody>
@@ -183,6 +191,13 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://kit.fontawesome.com/f92c8dde3d.js" crossorigin="anonymous"></script>
+			<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+			<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+			<script>
+			$( function() {
+				$( "#datepicker" ).datepicker();
+			} );
+			</script>
 
 
 
